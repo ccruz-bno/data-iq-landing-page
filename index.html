@@ -98,36 +98,39 @@
 
             <div class="grid md:grid-cols-3 gap-8 text-left">
                 <!-- Pink Card -->
-                <div
-                    class="card-pink rounded-3xl p-8 text-white hover:-translate-y-2 transition-transform duration-300">
-                    <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-pink text-3xl">folder_off</span>
+                <div class="snake-card snake-card-pink-glow">
+                    <div class="snake-card-content card-pink p-8 text-white">
+                        <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-pink text-3xl">folder_off</span>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-3">Información en Silos</h4>
+                        <p class="text-white/90 text-sm">Datos vitales atrapados en PDFs, emails y sistemas desconectados
+                            que impiden una visión global 360° del negocio.</p>
                     </div>
-                    <h4 class="text-xl font-semibold mb-3">Información en Silos</h4>
-                    <p class="text-white/90 text-sm">Datos vitales atrapados en PDFs, emails y sistemas desconectados
-                        que impiden una visión global 360° del negocio.</p>
                 </div>
 
                 <!-- Navy Card -->
-                <div
-                    class="card-navy rounded-3xl p-8 text-white hover:-translate-y-2 transition-transform duration-300">
-                    <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-navy-dark text-3xl">hourglass_empty</span>
+                <div class="snake-card snake-card-navy-glow">
+                    <div class="snake-card-content card-navy p-8 text-white">
+                        <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-navy-dark text-3xl">hourglass_empty</span>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-3">Insights Lentos</h4>
+                        <p class="text-white/80 text-sm">Búsquedas manuales en documentos dispersos que retrasan la toma de
+                            decisiones críticas y consume el 80% del tiempo de los analistas.</p>
                     </div>
-                    <h4 class="text-xl font-semibold mb-3">Insights Lentos</h4>
-                    <p class="text-white/80 text-sm">Búsquedas manuales en documentos dispersos que retrasan la toma de
-                        decisiones críticas y consume el 80% del tiempo de los analistas.</p>
                 </div>
 
                 <!-- Cyan Card -->
-                <div
-                    class="card-cyan rounded-3xl p-8 text-white hover:-translate-y-2 transition-transform duration-300">
-                    <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-cyan text-3xl">analytics</span>
+                <div class="snake-card snake-card-cyan-glow">
+                    <div class="snake-card-content card-cyan p-8 text-white">
+                        <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-cyan text-3xl">analytics</span>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-3">Análisis Manual</h4>
+                        <p class="text-white/90 text-sm">Procesos propensos a errores humanos y falta de escalabilidad que
+                            limitan la capacidad de respuesta ante el mercado.</p>
                     </div>
-                    <h4 class="text-xl font-semibold mb-3">Análisis Manual</h4>
-                    <p class="text-white/90 text-sm">Procesos propensos a errores humanos y falta de escalabilidad que
-                        limitan la capacidad de respuesta ante el mercado.</p>
                 </div>
             </div>
         </div>
@@ -191,76 +194,92 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-cyan/10 text-cyan hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">account_balance</span>
+                <div class="casos-snake-card casos-snake-cyan casos-glow-cyan shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-cyan/10 text-cyan hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">account_balance</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">Servicios Financieros</h4>
+                        <p class="text-xs text-gray-500">Análisis de riesgos avanzado y automatización de reportes
+                            regulatorios complejos en segundos.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">Servicios Financieros</h4>
-                    <p class="text-xs text-gray-500">Análisis de riesgos avanzado y automatización de reportes
-                        regulatorios complejos en segundos.</p>
                 </div>
                 <!-- 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-purple-100 text-purple-600 hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">precision_manufacturing</span>
+                <div class="casos-snake-card casos-snake-purple casos-glow-purple shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-purple-100 text-purple-600 hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">precision_manufacturing</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">Manufactura</h4>
+                        <p class="text-xs text-gray-500">Optimización inteligente de cadena de suministro y modelos
+                            avanzados de mantenimiento predictivo.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">Manufactura</h4>
-                    <p class="text-xs text-gray-500">Optimización inteligente de cadena de suministro y modelos
-                        avanzados de mantenimiento predictivo.</p>
                 </div>
                 <!-- 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-orange-100 text-orange-500 hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">storefront</span>
+                <div class="casos-snake-card casos-snake-orange casos-glow-orange shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-orange-100 text-orange-500 hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">storefront</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">Retail</h4>
+                        <p class="text-xs text-gray-500">Personalización profunda de la experiencia del cliente y gestión de
+                            inventario en tiempo real.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">Retail</h4>
-                    <p class="text-xs text-gray-500">Personalización profunda de la experiencia del cliente y gestión de
-                        inventario en tiempo real.</p>
                 </div>
                 <!-- 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-green-100 text-green-600 hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">health_and_safety</span>
+                <div class="casos-snake-card casos-snake-green casos-glow-green shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-green-100 text-green-600 hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">health_and_safety</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">Salud</h4>
+                        <p class="text-xs text-gray-500">Gestión optimizada de historias clínicas e investigación médica
+                            acelerada mediante análisis inteligente.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">Salud</h4>
-                    <p class="text-xs text-gray-500">Gestión optimizada de historias clínicas e investigación médica
-                        acelerada mediante análisis inteligente.</p>
                 </div>
                 <!-- 5 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-yellow-100 text-yellow-600 hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">inventory_2</span>
+                <div class="casos-snake-card casos-snake-yellow casos-glow-yellow shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-yellow-100 text-yellow-600 hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">inventory_2</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">CPG</h4>
+                        <p class="text-xs text-gray-500">Predicción precisa de demanda y análisis profundo de tendencias de
+                            consumo en el mercado.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">CPG</h4>
-                    <p class="text-xs text-gray-500">Predicción precisa de demanda y análisis profundo de tendencias de
-                        consumo en el mercado.</p>
                 </div>
                 <!-- 6 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">memory</span>
+                <div class="casos-snake-card casos-snake-blue casos-glow-blue shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">memory</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">Tecnología</h4>
+                        <p class="text-xs text-gray-500">Análisis ágil de telemetría y resolución proactiva de incidencias
+                            en infraestructuras complejas.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">Tecnología</h4>
-                    <p class="text-xs text-gray-500">Análisis ágil de telemetría y resolución proactiva de incidencias
-                        en infraestructuras complejas.</p>
                 </div>
                 <!-- 7 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-pink-100 text-pink-600 hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">school</span>
+                <div class="casos-snake-card casos-snake-pink casos-glow-pink shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-pink-100 text-pink-600 hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">school</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">Educación</h4>
+                        <p class="text-xs text-gray-500">Personalización del aprendizaje y análisis integral del desempeño
+                            académico estudiantil.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">Educación</h4>
-                    <p class="text-xs text-gray-500">Personalización del aprendizaje y análisis integral del desempeño
-                        académico estudiantil.</p>
                 </div>
                 <!-- 8 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-16 h-16 mx-auto bg-gray-200 text-gray-600 hexagon-icon mb-4">
-                        <span class="material-symbols-outlined">local_shipping</span>
+                <div class="casos-snake-card casos-snake-gray casos-glow-gray shadow-sm">
+                    <div class="casos-snake-card-content p-8">
+                        <div class="w-16 h-16 mx-auto bg-gray-200 text-gray-600 hexagon-icon mb-4">
+                            <span class="material-symbols-outlined">local_shipping</span>
+                        </div>
+                        <h4 class="font-bold text-navy-dark mb-2">Transportes</h4>
+                        <p class="text-xs text-gray-500">Optimización de rutas logísticas y seguimiento en tiempo real de
+                            flotas comerciales.</p>
                     </div>
-                    <h4 class="font-bold text-navy-dark mb-2">Transportes</h4>
-                    <p class="text-xs text-gray-500">Optimización de rutas logísticas y seguimiento en tiempo real de
-                        flotas comerciales.</p>
                 </div>
             </div>
         </div>

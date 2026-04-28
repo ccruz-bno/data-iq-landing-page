@@ -80,3 +80,136 @@ p, h1, h2, h3, h4, span.text-gray-600 {
 .animate-float {
     animation: float 6s ease-in-out infinite;
 }
+
+/* Animated Snake Hover Effect */
+.snake-card {
+    position: relative;
+    padding: 4px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.snake-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+
+/* Colored Glows for each card */
+.snake-card-pink-glow:hover {
+    box-shadow: 0 25px 50px -12px rgba(255, 127, 150, 0.6);
+}
+.snake-card-navy-glow:hover {
+    box-shadow: 0 25px 50px -12px rgba(19, 30, 72, 0.6);
+}
+.snake-card-cyan-glow:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 193, 222, 0.6);
+}
+
+.snake-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 160%;
+    width: 160%;
+    border-radius: inherit;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    background: white;
+    animation: snake-moving 4.8s linear infinite paused;
+    transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 0;
+}
+
+.snake-card:hover::before {
+    animation-play-state: running;
+    width: 25%;
+}
+
+.snake-card-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: calc(1.5rem - 4px);
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes snake-moving {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Casos Snake Cards */
+.casos-snake-card {
+    position: relative;
+    padding: 3px; 
+    border-radius: 1.25rem;
+    background: white;
+    border: 1px solid #f3f4f6; /* border-gray-100 */
+    overflow: hidden;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.casos-snake-card:hover {
+    border-color: transparent;
+    transform: translateY(-8px) scale(1.02);
+}
+
+.casos-snake-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 160%;
+    width: 160%;
+    border-radius: inherit;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    opacity: 0;
+    animation: snake-moving 4.8s linear infinite paused;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 0;
+}
+
+.casos-snake-card:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+    width: 25%;
+}
+
+.casos-snake-card-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem; /* rounded-2xl */
+    background: white;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Specific colors for Casos snake and glow */
+.casos-snake-cyan::before { background: #00C1DE; }
+.casos-glow-cyan:hover { box-shadow: 0 20px 40px -10px rgba(0, 193, 222, 0.4); }
+
+.casos-snake-purple::before { background: #9333ea; }
+.casos-glow-purple:hover { box-shadow: 0 20px 40px -10px rgba(147, 51, 234, 0.4); }
+
+.casos-snake-orange::before { background: #f97316; }
+.casos-glow-orange:hover { box-shadow: 0 20px 40px -10px rgba(249, 115, 22, 0.4); }
+
+.casos-snake-green::before { background: #16a34a; }
+.casos-glow-green:hover { box-shadow: 0 20px 40px -10px rgba(22, 163, 74, 0.4); }
+
+.casos-snake-yellow::before { background: #ca8a04; }
+.casos-glow-yellow:hover { box-shadow: 0 20px 40px -10px rgba(202, 138, 4, 0.4); }
+
+.casos-snake-blue::before { background: #2563eb; }
+.casos-glow-blue:hover { box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.4); }
+
+.casos-snake-pink::before { background: #db2777; }
+.casos-glow-pink:hover { box-shadow: 0 20px 40px -10px rgba(219, 39, 119, 0.4); }
+
+.casos-snake-gray::before { background: #4b5563; }
+.casos-glow-gray:hover { box-shadow: 0 20px 40px -10px rgba(75, 85, 99, 0.4); }
