@@ -26,7 +26,7 @@ p, h1, h2, h3, h4, span.text-gray-600 {
 .bg-gradient-hero {
     background-color: #FAFAFA;
     background-image: 
-        radial-gradient(at 0% 0%, rgba(255, 127, 150, 0.2) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, rgba(208, 77, 163, 0.2) 0px, transparent 50%),
         radial-gradient(at 100% 0%, rgba(0, 193, 222, 0.2) 0px, transparent 50%),
         radial-gradient(at 50% 100%, rgba(0, 193, 222, 0.15) 0px, transparent 50%);
     background-size: 150% 150%;
@@ -46,11 +46,11 @@ p, h1, h2, h3, h4, span.text-gray-600 {
 }
 
 .card-pink {
-    background: linear-gradient(135deg, #FF7F96 0%, #FF607C 100%);
+    background: linear-gradient(135deg, #D04DA3 0%, #B53689 100%);
 }
 
 .card-navy {
-    background: linear-gradient(135deg, #131E48 0%, #0B1437 100%);
+    background: linear-gradient(135deg, #156082 0%, #0E4259 100%);
 }
 
 .card-cyan {
@@ -62,7 +62,7 @@ p, h1, h2, h3, h4, span.text-gray-600 {
 }
 
 .btn-gradient-pink {
-    background: linear-gradient(90deg, #FF7F96 0%, #131E48 100%);
+    background: linear-gradient(90deg, #D04DA3 0%, #131E48 100%);
 }
 
 @keyframes float {
@@ -97,10 +97,10 @@ p, h1, h2, h3, h4, span.text-gray-600 {
 
 /* Colored Glows for each card */
 .snake-card-pink-glow:hover {
-    box-shadow: 0 25px 50px -12px rgba(255, 127, 150, 0.6);
+    box-shadow: 0 25px 50px -12px rgba(208, 77, 163, 0.6);
 }
 .snake-card-navy-glow:hover {
-    box-shadow: 0 25px 50px -12px rgba(19, 30, 72, 0.6);
+    box-shadow: 0 25px 50px -12px rgba(21, 96, 130, 0.6);
 }
 .snake-card-cyan-glow:hover {
     box-shadow: 0 25px 50px -12px rgba(0, 193, 222, 0.6);
@@ -211,5 +211,5 @@ p, h1, h2, h3, h4, span.text-gray-600 {
 .casos-snake-pink::before { background: #db2777; }
 .casos-glow-pink:hover { box-shadow: 0 20px 40px -10px rgba(219, 39, 119, 0.4); }
 
-.casos-snake-gray::before { background: #4b5563; }
-.casos-glow-gray:hover { box-shadow: 0 20px 40px -10px rgba(75, 85, 99, 0.4); }
+.casos-snake-gray::before { background: #9ca3af; }
+.casos-glow-gray:hover { box-shadow: 0 20px 40px -10px rgba(156, 163, 175, 0.4); }
