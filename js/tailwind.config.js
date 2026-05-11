@@ -12,8 +12,9 @@ tailwind.config = {
           light: '#00E2FF'
         },
         pink: {
-          DEFAULT: '#FF7F96'
+          DEFAULT: '#D04DA3'
         },
+        'primario-2': '#00C1DE',
         background: {
           DEFAULT: '#FAFAFA'
         }
